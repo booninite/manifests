@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spotifyd
+  namespace: spotifyd
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: spotifyd
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: spotifyd
+    spec:
+      containers:
+      - args:
+        - --verbose
+        - --no-daemon
+        - --device-name
+        - red-speakers
+        - --device
+        - default:CARD=A2
+        - --bitrate
+        - "320"
+        command:
+        - spotifyd
+        image: ggoussard/spotifyd
+        imagePullPolicy: Always
+        name: spotifyd
+        securityContext:
+          privileged: true
+        volumeMounts:
+        - mountPath: /usr/share/alsa
+          name: alsa
+        - mountPath: /dev/snd
+          name: snd
+      hostNetwork: true
+      nodeSelector:
+        k3s.io/hostname: bane
+      volumes:
+      - hostPath:
+          path: /usr/share/alsa
+        name: alsa
+      - hostPath:
+          path: /dev/snd
+        name: snd

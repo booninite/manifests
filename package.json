@@ -1,0 +1,33 @@
+{
+  "name": "@booninite/manifests",
+  "version": "4.20.0",
+  "description": "k3s homelab manifests",
+  "repository": "github.com/booninite/manifests",
+  "author": "@booninite",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@dpu/jkcfg-k8s": "0.0.7",
+    "@dpu/monero-node": "0.0.7",
+    "@dpu/nfs-client-provisioner": "0.0.7",
+    "@dpu/nfs-server": "0.0.7",
+    "@dpu/spotifyd": "0.0.7",
+    "@dpu/syncthing": "0.0.7",
+    "@dpu/tautulli": "0.0.7",
+    "@jkcfg/kubernetes": "0.6.0",
+    "@jkcfg/std": "0.3.2",
+    "@kubernetes/client-node": "0.11.2",
+    "lodash-es": "4.17.15"
+  },
+  "devDependencies": {
+    "prettier": "2.0.5",
+    "tslint": "6.1.2",
+    "tslint-config-prettier": "1.18.0",
+    "tslint-microsoft-contrib": "6.2.0",
+    "typescript": "3.8.3"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5"
+  }
+}
