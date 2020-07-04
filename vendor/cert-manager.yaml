@@ -5544,7 +5544,6 @@ spec:
     served: true
     storage: true
 ---
----
 # Source: cert-manager/templates/cainjector-serviceaccount.yaml
 apiVersion: v1
 kind: ServiceAccount
