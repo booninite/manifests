@@ -239,7 +239,7 @@ spec:
         # https://$(GIT_AUTHUSER):$(GIT_AUTHKEY)@github.com/user/repository.git
         - --git-url=https://$(GIT_AUTHUSER):$(GIT_AUTHKEY)@github.com/booninite/manifests.git
         - --git-branch=master
-        - --git-path=namespaces,vendor
+        - --git-path=generated,vendor
         - --git-label=flux
         - --git-user=booninite
         - --git-email=booninite@users.noreply.github.com
