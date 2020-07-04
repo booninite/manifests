@@ -213,9 +213,9 @@ spec:
         # Include this if you want to supply HTTP basic auth credentials for git
         # via the `GIT_AUTHUSER` and `GIT_AUTHKEY` environment variables using a
         # secret.
-        # envFrom:
-        # - secretRef:
-        #     name: flux-git-auth
+        envFrom:
+        - secretRef:
+            name: flux-git-auth
 
         args:
 
@@ -237,12 +237,13 @@ spec:
         # Replace the following URL to change the Git repository used by Flux.
         # HTTP basic auth credentials can be supplied using environment variables:
         # https://$(GIT_AUTHUSER):$(GIT_AUTHKEY)@github.com/user/repository.git
-        - --git-url=git@github.com:booninite/manifests
+        - --git-url=https://$(GIT_AUTHUSER):$(GIT_AUTHKEY)@github.com/booninite/manifests.git
         - --git-branch=master
         - --git-path=namespaces,vendor
         - --git-label=flux
         - --git-user=booninite
         - --git-email=booninite@users.noreply.github.com
+        - --git-timeout=300s
 
         # Include these two to enable git commit signing
         # - --git-gpg-key-import=/root/gpg-import

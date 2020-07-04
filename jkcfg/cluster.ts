@@ -5,6 +5,7 @@ import {
 import * as k8s from '@jkcfg/kubernetes/api';
 import { valuesForGenerate } from '@jkcfg/kubernetes/generate';
 import { constants } from './constants';
+import fluxGitAuth from './flux-git-auth';
 import blog from './services/blog';
 import monero from './services/monerod';
 import nextcloud from './services/nextcloud';
@@ -28,12 +29,11 @@ const cluster = async () => {
     certManagerNs,
     ...syncthing,
     ...(await spotifyd()),
+    await fluxGitAuth(),
     ...blog,
     StagingAcme(issuers.staging.name, 'staging-issuer-account-key', email),
     ProductionAcme(issuers.prod.name, 'prod-issuer-account-key', email),
   ];
-
-  // print(resources, {});
 
   // handle this by exporting a function as default
   const manifests = valuesForGenerate(resources);
