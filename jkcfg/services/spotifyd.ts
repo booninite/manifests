@@ -19,6 +19,7 @@ export default async () => {
   return Spotifyd({
     spotifyDeviceName: 'red-speakers',
     deviceName: 'default:CARD=A2',
+    image: 'ggoussard/spotifyd:armhf',
     // username: 'nxbs1gmeale4ncq6hrzhlfkbi',
     // password: await read(
     //   './shimmerjs/k8s/sealed-secret-data/spotify-password.txt',
