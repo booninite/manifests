@@ -37,7 +37,7 @@ spec:
           name: snd
       hostNetwork: true
       nodeSelector:
-        k3s.io/hostname: bane
+        k3s.io/hostname: wendy
       volumes:
       - hostPath:
           path: /usr/share/alsa

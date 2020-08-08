@@ -5,14 +5,14 @@ import { patchResource } from '@jkcfg/kubernetes/transform';
 import { constants } from '../constants';
 
 // merge in node selector for bane so spotify is schedule to box with speakers
-const baneNodeSelectorPatch = patchResource({
+const nodeSelectorPatch = patchResource({
   kind: 'Deployment',
   apiVersion: 'apps/v1',
   metadata: {
     name: 'spotifyd',
     namespace: 'spotifyd',
   },
-  ...podNodeSelector({ [K3s.Hostname]: constants.nodes.names.bane }),
+  ...podNodeSelector({ [K3s.Hostname]: constants.nodes.names.wendy }),
 });
 
 export default async () => {
@@ -24,5 +24,5 @@ export default async () => {
     //   './shimmerjs/k8s/sealed-secret-data/spotify-password.txt',
     //   { encoding: Encoding.String }
     // ),
-  }).map(baneNodeSelectorPatch);
+  }).map(nodeSelectorPatch);
 };
