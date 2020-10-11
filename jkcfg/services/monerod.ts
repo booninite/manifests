@@ -9,4 +9,5 @@ export default Monero({
     tls: 'monero-ingress',
     host: moneroHost,
   },
+  image: 'xmrto/monero:v0.17.0.1',
 }).resources;
