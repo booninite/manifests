@@ -23,82 +23,82 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@dpu/bazel-remote-cache@0.4.7":
-  version "0.4.7"
-  resolved "https://registry.yarnpkg.com/@dpu/bazel-remote-cache/-/bazel-remote-cache-0.4.7.tgz#55d333d24bc19678367a2d6f3cd7e755938ab12a"
-  integrity sha512-PoLq5vIYF78xpJGoq2hcHITGwY6co8+RNTcqvCacWSmzI7S6VaG9PYfkoKq4pF/yw5BJ7B/BVHnAI1sn4KEyJQ==
+"@dpu/bazel-remote-cache@latest":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@dpu/bazel-remote-cache/-/bazel-remote-cache-0.5.2.tgz#3863bd71b62556542f477a2be40fa1bb4be8b0ec"
+  integrity sha512-GelnAo2opXYnD//ZJ3W/72ZZdvD/YXXj/hKsLIJVQBY9E2Cn2A5NRT3kLiYyC0bOldx7qadF9h3X7KP3Z2tVeQ==
   dependencies:
-    "@dpu/jkcfg-k8s" "0.4.7"
+    "@dpu/jkcfg-k8s" "0.5.2"
     "@jkcfg/kubernetes" "0.6.0"
     "@jkcfg/std" "0.3.2"
     lodash-es "4.17.15"
 
-"@dpu/jkcfg-k8s@0.4.7", "@dpu/jkcfg-k8s@0.4.7 ":
-  version "0.4.7"
-  resolved "https://registry.yarnpkg.com/@dpu/jkcfg-k8s/-/jkcfg-k8s-0.4.7.tgz#4a8acf3345afb599049a44024be15a8b6dae282b"
-  integrity sha512-denKRdjH2yvFHX8SHLuIasSvu2ksPb7a+PTblL6DZs2NZnMSO2QJnVfDK8zpSJL7RyQAGoni0yjtCbqaadnfZQ==
+"@dpu/jkcfg-k8s@0.5.2", "@dpu/jkcfg-k8s@latest":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@dpu/jkcfg-k8s/-/jkcfg-k8s-0.5.2.tgz#f73d9fcdb947fb42c5b3f8313494b3fa55dfab34"
+  integrity sha512-7X1a/7XNGZhtGHzpXl+yqfWxHPVbYowC9i+0743LhN8/CAZ4xNRJVEZyrSpdMfnDIjbM68nGUur3v/mFfHeFcg==
   dependencies:
     "@jkcfg/kubernetes" "0.6.0"
     "@jkcfg/std" "0.3.2"
     "@kubernetes/client-node" "0.11.0"
     lodash-es "4.17.15"
 
-"@dpu/monero-node@0.4.7 ":
-  version "0.4.7"
-  resolved "https://registry.yarnpkg.com/@dpu/monero-node/-/monero-node-0.4.7.tgz#fd06c4d9f325fdbd598eea456bb715b6849efa0c"
-  integrity sha512-PIuAtyb4dQ+iNkKlEnJJ/sQBUu1DCX2hhhYb9+ayWelNFLVzbTFzikd4SRtaSL1ToNO6rzwfUTyWM5FmTb0TJg==
+"@dpu/monero-node@latest":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@dpu/monero-node/-/monero-node-0.5.2.tgz#adb24f6979b946a2559e7f89523159c70cb69586"
+  integrity sha512-ODf7Hk5T/P5Yd4EldoZmgkneIMMDGFO1MvO3nhFuJkBkv18RaSg4fOfxLPQiQGVNZQkq/ycV9Jeu4doRW1sjQg==
   dependencies:
-    "@dpu/jkcfg-k8s" "0.4.7"
+    "@dpu/jkcfg-k8s" "0.5.2"
     "@jkcfg/kubernetes" "0.6.0"
     "@jkcfg/std" "0.3.2"
     lodash-es "4.17.15"
 
-"@dpu/nfs-client-provisioner@0.4.7":
-  version "0.4.7"
-  resolved "https://registry.yarnpkg.com/@dpu/nfs-client-provisioner/-/nfs-client-provisioner-0.4.7.tgz#5f406ed8bdfae6a3eb8b9c920a74b5627a64daee"
-  integrity sha512-HqFWtdO8w7PRy69xXWXrlCU8Z/38UnMtjCwgYFIKgNUKcpngCNcbON1zkPMVWFSQZuK/2rzLVl6Yw+VX073/tw==
+"@dpu/nfs-client-provisioner@latest":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@dpu/nfs-client-provisioner/-/nfs-client-provisioner-0.5.2.tgz#0a230bd330456a27dd304d43d9b74641ea78c327"
+  integrity sha512-5B8RrzhOI/BjjkZms0pTTwdJlPTtTHXuBF2q4d7+2uRDjn7/0lx+Sktpcv+Qt4sjdjEseqmrn5tR/3xE3iI77g==
   dependencies:
-    "@dpu/jkcfg-k8s" "0.4.7"
+    "@dpu/jkcfg-k8s" "0.5.2"
     "@jkcfg/kubernetes" "0.6.0"
     "@jkcfg/std" "0.3.2"
     lodash-es "4.17.15"
 
-"@dpu/nfs-server@0.4.7":
-  version "0.4.7"
-  resolved "https://registry.yarnpkg.com/@dpu/nfs-server/-/nfs-server-0.4.7.tgz#6c085d499c44ee6e3ecfa3905f73078ae4e1df39"
-  integrity sha512-7WI5TDZ3O1Enlsb97ikQnou/X1AQKMBpRd06/Dt8PSU8O4dJqQlv+c/Gpjs6KdOXTh8XPDjx96CqmCvZAWKozQ==
+"@dpu/nfs-server@latest":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@dpu/nfs-server/-/nfs-server-0.5.2.tgz#d64b91eb2ffcac4b758865f50cf04ecaaf850ac2"
+  integrity sha512-F+qxL8Fgt1FwkNvZBAfckfTPJfCB0t/pY93x7+T2RaIOP1fKnBZe1k3STnYspO7nLNf/MbbTr9QRmQ2M/p1IGg==
   dependencies:
-    "@dpu/jkcfg-k8s" "0.4.7"
+    "@dpu/jkcfg-k8s" "0.5.2"
     "@jkcfg/kubernetes" "0.6.0"
     "@jkcfg/std" "0.3.2"
     lodash-es "4.17.15"
 
-"@dpu/spotifyd@0.4.7":
-  version "0.4.7"
-  resolved "https://registry.yarnpkg.com/@dpu/spotifyd/-/spotifyd-0.4.7.tgz#96a69168f0b5712067c7fe34a08157f062a961fb"
-  integrity sha512-oKF7Bpn4XQyAYVXgCI9MBw3AYUG4da9buEGlPfu7CLeAa02Kkk5Ti1mPxdUVvtTcCYZtcKjf8ijsXZgbJsG2rA==
+"@dpu/spotifyd@latest":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@dpu/spotifyd/-/spotifyd-0.5.2.tgz#71904eaf6ea7461f576abe2544373ad310cdc1d7"
+  integrity sha512-bCrFUB93skLlTXY5ArxZd+i59vCXTgGy1yOCaIAXSIMpoqOCxwqB+7+aWU77cS68Kbj5VnFMEuueAW9EQfS0UQ==
   dependencies:
-    "@dpu/jkcfg-k8s" "0.4.7"
+    "@dpu/jkcfg-k8s" "0.5.2"
     "@jkcfg/kubernetes" "0.6.0"
     "@jkcfg/std" "0.3.2"
     lodash-es "4.17.15"
 
-"@dpu/syncthing@0.4.7 ":
-  version "0.4.7"
-  resolved "https://registry.yarnpkg.com/@dpu/syncthing/-/syncthing-0.4.7.tgz#f28047d289c277853bf451c8c1f1a1f51b40d0e5"
-  integrity sha512-Zw9KgpBALzsyZ64pMROvlug+sGpSEFDhtvqDi3Ky8sMcJvdmMgeupQb+gTXPehiqsgFBklM8q1q22JURu7uJqQ==
+"@dpu/syncthing@latest":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@dpu/syncthing/-/syncthing-0.5.2.tgz#058f095940fe8419fc5f17bafd330a61f3cc5435"
+  integrity sha512-2bUuqEpU2NoF/TUBOKhDg91YdjWmmmToBicpRBsQf/ala4h1QfNbRdcKboxSMQWZwv+8yEm+ZAjdek7L5sCrSA==
   dependencies:
-    "@dpu/jkcfg-k8s" "0.4.7"
+    "@dpu/jkcfg-k8s" "0.5.2"
     "@jkcfg/kubernetes" "0.6.0"
     "@jkcfg/std" "0.3.2"
     lodash-es "4.17.15"
 
-"@dpu/tautulli@0.4.7":
-  version "0.4.7"
-  resolved "https://registry.yarnpkg.com/@dpu/tautulli/-/tautulli-0.4.7.tgz#2bb0567a3c2d9df2a6dd82d33096aad762269b82"
-  integrity sha512-QmvE0biBPBoCksC/Br9sxQA+acHgqyUuauv76e3uTCeEJUch0emmUdJ1mrG6xsRkMhkyGZymyCehhwCbgmFVIg==
+"@dpu/tautulli@latest":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@dpu/tautulli/-/tautulli-0.5.2.tgz#b7d99ec4f8d02a2390685483443845b8efdd7925"
+  integrity sha512-dwH2jYPPmnT3LEHpL6FU5v+baaW2SfSfqTWacri5V/zD2z8Jb/G+HBN1hmj8V62Ck9qmamqPTFjiuZx/idUEcw==
   dependencies:
-    "@dpu/jkcfg-k8s" "0.4.7"
+    "@dpu/jkcfg-k8s" "0.5.2"
     "@jkcfg/kubernetes" "0.6.0"
     "@jkcfg/std" "0.3.2"
     lodash-es "4.17.15"
