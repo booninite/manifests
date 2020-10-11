@@ -1,6 +1,6 @@
-import { K3s } from '@dpu/jkcfg-k8s/dist/labels';
-import { podNodeSelector } from '@dpu/jkcfg-k8s/dist/pod';
-import Spotifyd from '@dpu/spotifyd';
+import { K3s } from '@dpu/jkcfg-k8s/labels';
+import { podNodeSelector } from '@dpu/jkcfg-k8s/pod';
+import { Spotifyd } from '@dpu/spotifyd';
 import { patchResource } from '@jkcfg/kubernetes/transform';
 import { constants } from '../constants';
 

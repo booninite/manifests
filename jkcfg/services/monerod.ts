@@ -1,8 +1,8 @@
-import Monero from '@dpu/monero-node';
+import { Monerod } from '@dpu/monero-node';
 import { hostname, letsencrypt } from '../constants';
 
 const moneroHost = 'monerod.' + hostname.external;
-export default Monero({
+export default Monerod({
   ingress: {
     enabled: true,
     annotations: letsencrypt.issuers.prod.annotations,
@@ -10,4 +10,4 @@ export default Monero({
     host: moneroHost,
   },
   image: 'xmrto/monero:v0.17.0.1',
-}).resources;
+});

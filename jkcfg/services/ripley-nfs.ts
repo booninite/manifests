@@ -1,6 +1,6 @@
 // TODO: move this all to nfs namespace
-import { K3s } from '@dpu/jkcfg-k8s/dist/labels';
-import NfsServer from '@dpu/nfs-server';
+import { K3s } from '@dpu/jkcfg-k8s/labels';
+import { NfsServer } from '@dpu/nfs-server';
 import { NodeNames } from '../constants';
 
 const ripleyNfs = NfsServer({

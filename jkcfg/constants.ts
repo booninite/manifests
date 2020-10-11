@@ -1,4 +1,4 @@
-import CertManagerAnnotations from '@dpu/jkcfg-k8s/dist/cert-manager-annotations';
+import CertManagerAnnotations from '@dpu/jkcfg-k8s/cert-manager-annotations';
 
 export enum NodeNames {
   ephraim = 'ephraim',
@@ -39,7 +39,7 @@ export const hostname = {
 
 export const router = {
   ip: '192.168.1.1',
-  externalIp: '99.111.157.163',
+  externalIp: '99.132.141.3',
 };
 
 export const letsencrypt = {

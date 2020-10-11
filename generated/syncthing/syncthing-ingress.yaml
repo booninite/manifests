@@ -3,7 +3,6 @@ kind: Ingress
 metadata:
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt-prod
-  app.kubernetes.io/name: syncthing
   name: syncthing
   namespace: syncthing
 spec:

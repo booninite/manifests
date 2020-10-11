@@ -1,7 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  app.kubernetes.io/name: plex-nfs
   name: plex-nfs
   namespace: nfs
 spec:

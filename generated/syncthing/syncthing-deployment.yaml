@@ -1,7 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  app.kubernetes.io/name: syncthing
   name: syncthing
   namespace: syncthing
 spec:

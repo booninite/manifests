@@ -1,10 +1,10 @@
-import { Container } from '@dpu/jkcfg-k8s/dist/container';
-import { Deployment } from '@dpu/jkcfg-k8s/dist/deployment';
-import { Ingress } from '@dpu/jkcfg-k8s/dist/ingress';
-import { appNameSelector } from '@dpu/jkcfg-k8s/dist/labels';
-import { VolumeTypes } from '@dpu/jkcfg-k8s/dist/models';
-import { svcPort } from '@dpu/jkcfg-k8s/dist/service';
-import { finalize } from '@dpu/jkcfg-k8s/dist/util';
+import { Container } from '@dpu/jkcfg-k8s/container';
+import { Deployment } from '@dpu/jkcfg-k8s/deployment';
+import { Ingress } from '@dpu/jkcfg-k8s/ingress';
+import { appNameSelector } from '@dpu/jkcfg-k8s/labels';
+import { VolumeTypes } from '@dpu/jkcfg-k8s/models';
+import { svcPort } from '@dpu/jkcfg-k8s/service';
+import { finalize } from '@dpu/jkcfg-k8s/util';
 import * as k8s from '@jkcfg/kubernetes/api';
 import { merge } from 'lodash-es';
 import { constants } from '../constants';

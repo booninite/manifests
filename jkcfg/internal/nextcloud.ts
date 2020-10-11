@@ -1,12 +1,12 @@
-import { name, namespace, persistence } from '@dpu/jkcfg-k8s/dist/parameters';
-import { HelmChart } from '@dpu/jkcfg-k8s/dist/rancher-helm';
+import { Name, Namespace, Persistence } from '@dpu/jkcfg-k8s/parameters';
+import { HelmChart } from '@dpu/jkcfg-k8s/rancher-helm';
 import * as k8s from '@jkcfg/kubernetes/api';
 import { Boolean, String } from '@jkcfg/std/param';
 import { merge } from 'lodash-es';
 
 export const params = {
-  name: name('nextcloud'),
-  namespace: namespace('nextcloud'),
+  name: Name('nextcloud'),
+  namespace: Namespace('nextcloud'),
   // TODO: allow partially overriding (e.g., only provide version)
   chartRef: String(
     'chartRef',
@@ -20,7 +20,7 @@ export const params = {
   host: String('host'),
   persistence: {
     enabled: Boolean('persistence.enabled', true),
-    ...persistence(),
+    ...Persistence('500Gi'),
   },
 };
 

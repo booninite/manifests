@@ -1,7 +1,7 @@
 import {
   ProductionAcme,
-  StagingAcme,
-} from '@dpu/jkcfg-k8s/dist/cluster-issuer';
+  StagingAcme
+} from '@dpu/jkcfg-k8s/cluster-issuer';
 import * as k8s from '@jkcfg/kubernetes/api';
 import { valuesForGenerate } from '@jkcfg/kubernetes/generate';
 import { constants } from './constants';

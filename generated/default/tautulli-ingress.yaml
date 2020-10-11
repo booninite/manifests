@@ -3,18 +3,18 @@ kind: Ingress
 metadata:
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt-prod
-  name: monerod
-  namespace: monerod
+  name: tautulli
+  namespace: default
 spec:
   rules:
-  - host: monerod.liveworkloft.dev
+  - host: tautulli.liveworkloft.dev
     http:
       paths:
       - backend:
-          serviceName: monerod
-          servicePort: 18081
+          serviceName: tautulli
+          servicePort: 8181
         path: /
   tls:
   - hosts:
-    - monerod.liveworkloft.dev
-    secretName: monero-ingress
+    - tautulli.liveworkloft.dev
+    secretName: tautulli-ingress

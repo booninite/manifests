@@ -1,4 +1,4 @@
-import Syncthing from '@dpu/syncthing';
+import { Syncthing } from '@dpu/syncthing';
 import { hostname, letsencrypt } from '../constants';
 
 export default Syncthing({
@@ -8,4 +8,4 @@ export default Syncthing({
     tls: 'syncthing-ingress',
     host: 'syncthing.' + hostname.external,
   },
-}).resources;
+});
