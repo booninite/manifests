@@ -2,5 +2,6 @@ node_modules/
 *.log
 dist/
 *.js
+!.yarn/releases/*.js
 *.js.map
 .yarn/cache
