@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+  name: fralex-life
+  namespace: fralex-life
+spec:
+  rules:
+  - host: fralex.life
+    http:
+      paths:
+      - backend:
+          serviceName: fralex-life
+          servicePort: 5000
+  tls:
+  - hosts:
+    - fralex.life
+    secretName: fralex-life

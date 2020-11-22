@@ -35,6 +35,7 @@ export const hostname = {
   external: 'liveworkloft.dev',
   blog: 'kdk12.sh',
   blogOld: 'emitbits.io',
+  fralex: 'fralex.life',
 };
 
 export const router = {

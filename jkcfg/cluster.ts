@@ -1,12 +1,10 @@
-import {
-  ProductionAcme,
-  StagingAcme
-} from '@dpu/jkcfg-k8s/cluster-issuer';
+import { ProductionAcme, StagingAcme } from '@dpu/jkcfg-k8s/cluster-issuer';
 import * as k8s from '@jkcfg/kubernetes/api';
 import { valuesForGenerate } from '@jkcfg/kubernetes/generate';
 import { constants } from './constants';
 import fluxGitAuth from './flux-git-auth';
 import blog from './services/blog';
+import fralexLife from './services/fralex-life';
 import monero from './services/monerod';
 import nextcloud from './services/nextcloud';
 import plexNfs from './services/plex-nfs';
@@ -31,6 +29,7 @@ const cluster = async () => {
     ...(await spotifyd()),
     await fluxGitAuth(),
     ...blog,
+    ...fralexLife,
     StagingAcme(issuers.staging.name, 'staging-issuer-account-key', email),
     ProductionAcme(issuers.prod.name, 'prod-issuer-account-key', email),
   ];

@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fralex-life
+  namespace: fralex-life
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: fralex-life
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: fralex-life
+    spec:
+      containers:
+      - args:
+        - site
+        command:
+        - serve
+        image: shimmerjs/fralex.life:latest
+        imagePullPolicy: Always
+        name: fralex-life
+        ports:
+        - containerPort: 5000
+        volumeMounts:
+        - mountPath: /site/serve.json
+          name: fralex-life
+          subPath: serve.json
+      volumes:
+      - configMap:
+          name: fralex-life
+        name: fralex-life
