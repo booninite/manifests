@@ -6,6 +6,7 @@ metadata:
   namespace: fralex-life
   annotations:
     fluxcd.io/automated: 'true'
+    fluxcd.io/tag.fralex-life: glob:latest
 spec:
   replicas: 1
   selector:
