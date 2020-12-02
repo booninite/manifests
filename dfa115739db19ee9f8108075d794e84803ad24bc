@@ -1,0 +1,1 @@
+{"jobID":"8f65632f-26cb-36a9-6499-3f3a608fbaf7","spec":{"type":"policy","cause":{"Message":"","User":"alex weidner \u003cshimmerjs@dpu.sh\u003e"},"spec":{"fralex-life:deployment/fralex-life":{"add":{"automated":"true"},"remove":{}}}},"result":null}
