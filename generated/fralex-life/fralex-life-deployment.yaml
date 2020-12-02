@@ -1,8 +1,11 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: fralex-life
   namespace: fralex-life
+  annotations:
+    fluxcd.io/automated: 'true'
 spec:
   replicas: 1
   selector:
