@@ -3,6 +3,9 @@ kind: Deployment
 metadata:
   name: fralex-life
   namespace: fralex-life
+  annotations:
+    fluxcd.io/automated: 'true'
+    fluxcd.io/tag.fralex-life: glob:bigday-*
 spec:
   replicas: 1
   selector:
