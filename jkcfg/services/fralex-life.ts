@@ -60,7 +60,7 @@ addContainer(
       name,
       port,
       image:
-        'shimmerjs/fralex.life@sha256:3220dfa4bc4a8a2432c44c57911d5cec46ee445fc5c00e912cabc13b4e3e9801',
+        'shimmerjs/fralex.life:bigday-21ff6d4d445d37c80a5e96fd2d260eda4367b3f0',
       command: ['serve'],
       args: ['site'],
     }),
