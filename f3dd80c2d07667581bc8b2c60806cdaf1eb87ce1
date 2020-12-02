@@ -1,0 +1,1 @@
+{"jobID":"d3af1f29-a99b-1a10-d01f-622f1da72253","spec":{"type":"policy","cause":{"Message":"","User":"alex weidner \u003cshimmerjs@dpu.sh\u003e"},"spec":{"fralex-life:deployment/fralex-life":{"add":{"tag_all":"glob:bigday-*"},"remove":{}}}},"result":null}
