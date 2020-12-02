@@ -59,7 +59,8 @@ addContainer(
     Container({
       name,
       port,
-      image: 'shimmerjs/fralex.life:latest',
+      image:
+        'shimmerjs/fralex.life@sha256:3220dfa4bc4a8a2432c44c57911d5cec46ee445fc5c00e912cabc13b4e3e9801',
       command: ['serve'],
       args: ['site'],
     }),
