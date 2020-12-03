@@ -1,3 +1,4 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -21,7 +22,7 @@ spec:
         - site
         command:
         - serve
-        image: shimmerjs/fralex.life:bigday-21ff6d4d445d37c80a5e96fd2d260eda4367b3f0
+        image: shimmerjs/fralex.life:bigday-a8536543e16be4bf638fef97e093076020645c79
         imagePullPolicy: Always
         name: fralex-life
         ports:
