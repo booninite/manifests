@@ -22,7 +22,7 @@ spec:
         - site
         command:
         - serve
-        image: shimmerjs/fralex.life:bigday-a8536543e16be4bf638fef97e093076020645c79
+        image: shimmerjs/fralex.life:bigday-6a5f3e7db1d58dcf6ea409dbc8524f6557334f0f
         imagePullPolicy: Always
         name: fralex-life
         ports:
