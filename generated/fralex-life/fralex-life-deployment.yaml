@@ -1,3 +1,4 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -17,8 +18,7 @@ spec:
         app.kubernetes.io/name: fralex-life
     spec:
       containers:
-      - args:
-        image: shimmerjs/fralex.life:bigday-21ff6d4d445d37c80a5e96fd2d260eda4367b3f0
+      - image: shimmerjs/fralex.life:bigday-6a5f3e7db1d58dcf6ea409dbc8524f6557334f0f
         imagePullPolicy: Always
         name: fralex-life
         ports:
