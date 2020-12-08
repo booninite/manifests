@@ -18,19 +18,8 @@ spec:
     spec:
       containers:
       - args:
-        - site
-        command:
-        - serve
         image: shimmerjs/fralex.life:bigday-21ff6d4d445d37c80a5e96fd2d260eda4367b3f0
         imagePullPolicy: Always
         name: fralex-life
         ports:
         - containerPort: 5000
-        volumeMounts:
-        - mountPath: /site/serve.json
-          name: fralex-life
-          subPath: serve.json
-      volumes:
-      - configMap:
-          name: fralex-life
-        name: fralex-life
