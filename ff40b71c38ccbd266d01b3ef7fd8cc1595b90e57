@@ -1,0 +1,1 @@
+{"jobID":"6e30aa2b-e603-2d3f-bfc2-1280dd28e20f","spec":{"type":"policy","cause":{"Message":"","User":"alex weidner \u003cshimmerjs@dpu.sh\u003e"},"spec":{"monerod:deployment/monerod":{"add":{"tag_all":"glob:v0.17.*"},"remove":{}}}},"result":null}
