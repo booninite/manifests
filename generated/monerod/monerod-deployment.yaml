@@ -31,7 +31,7 @@ spec:
         - "100"
         command:
         - monerod
-        image: xmrto/monero:v0.17.0.1
+        image: xmrto/monero:v0.17.1.6
         imagePullPolicy: Always
         name: monerod
         ports:
