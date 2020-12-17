@@ -18,7 +18,7 @@ spec:
         app.kubernetes.io/name: fralex-life
     spec:
       containers:
-      - image: shimmerjs/fralex.life:bigday-28314a5720474bfffb2f22cd70614a573afd27a2
+      - image: shimmerjs/fralex.life:bigday-cb7cfbe9bd04d12c6a6de62ea07bf15100aac59c
         imagePullPolicy: Always
         name: fralex-life
         ports:
