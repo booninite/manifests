@@ -28,7 +28,7 @@ spec:
         - "100"
         command:
         - monerod
-        image: shimmerjs/monero:latest
+        image: shimmerjs/monerod:latest
         imagePullPolicy: Always
         name: monerod
         ports:
