@@ -1,11 +1,8 @@
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: monerod
   namespace: monerod
-  annotations:
-    fluxcd.io/tag.monerod: glob:v0.17.*.*
 spec:
   replicas: 1
   selector:
@@ -31,7 +28,7 @@ spec:
         - "100"
         command:
         - monerod
-        image: xmrto/monero:v0.17.1.6
+        image: shimmerjs/monero:latest
         imagePullPolicy: Always
         name: monerod
         ports:
